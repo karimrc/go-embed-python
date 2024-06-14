@@ -10,7 +10,7 @@ You really only have to depend on this library and invoke it as follows:
 
 ```go
 import (
-	"github.com/kluctl/go-embed-python/python"
+	"github.com/karimrc/go-embed-python/python"
 	"os"
 )
 
@@ -78,7 +78,7 @@ To do this, create a simple generator application inside your application/librar
 package main
 
 import (
-	"github.com/kluctl/go-embed-python/pip"
+	"github.com/karimrc/go-embed-python/pip"
 )
 
 func main() {
@@ -108,7 +108,7 @@ to `internal/my-python-libs/data`. The embedded data is then available via `data
 The path returned by `EmbeddedFiles.GetExtractedPath()` can then be added to the `EmbeddedPython` by calling
 `AddPythonPath` on it.
 
-An example of all this can be found in https://github.com/kluctl/go-jinja2
+An example of all this can be found in https://github.com/karimrc/go-jinja2
 
 # Why another go+python solution?
 There are already multiple implementations of go-bindings for Python, which however all rely on CGO and/or dynamic
@@ -121,5 +121,5 @@ to work reliably, without any dependencies on the host system, it was required t
 distribution into my Go binaries. I managed to make this flexible enough to put into a library so that others might
 benefit as well.
 
-Initially, this approach/code was part of https://github.com/kluctl/kluctl to allow Jinja2 templates in Go. The Jinja2
-part can now be found in https://github.com/kluctl/go-jinja2.
+Initially, this approach/code was part of https://github.com/karimrc/karimrc to allow Jinja2 templates in Go. The Jinja2
+part can now be found in https://github.com/karimrc/go-jinja2.
