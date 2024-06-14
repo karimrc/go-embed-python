@@ -13,7 +13,6 @@ var DefaultPythonRemovePatterns = []glob.Glob{
 	glob.MustCompile("**.a"),
 	glob.MustCompile("**.pdb"),
 	glob.MustCompile("**.pyc"),
-	glob.MustCompile("**/test_*.py"),
 	glob.MustCompile("**/*.dist-info"),
 }
 
